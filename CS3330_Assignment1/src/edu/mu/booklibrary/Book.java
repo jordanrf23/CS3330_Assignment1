@@ -66,7 +66,7 @@ public class Book {
 	@Override
 	public String toString() {
 		//Returns a string representation of the book
-		return ISBN;
+		return title + " by " + author + "(ISBN: " + ISBN + ", $" + price +")";
 	}
 	public boolean equals(Book other) {
 		//Returns true if two books have the same ISBN number
