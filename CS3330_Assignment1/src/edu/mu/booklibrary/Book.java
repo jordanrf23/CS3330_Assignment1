@@ -6,12 +6,29 @@ public class Book {
 	String ISBN;
 	double price;
 	
-	public Book(String title, String author, String iSBN, double price) {
+	//default constructor
+	public Book() {
 		super();
 		this.title = "Unknown";
 		this.author = "Unknown";
 		ISBN = "Unknown";
 		this.price = 0.0;
+	}
+	
+	//parameterized constructors 
+	public Book(String title, String author, String ISBN, double price) {
+		this.title = title;
+		this.author = author;
+		this.ISBN = ISBN;
+		this.price = price;
+	}
+	
+	//copy constructors
+	public Book(Book other) {
+		this.title = other.title;
+		this.author = other.author;
+		this.ISBN = other.ISBN;
+		this.price = other.price;
 	}
 
 	public String getTitle() {
