@@ -68,8 +68,16 @@ public class Book {
 		//Returns a string representation of the book
 		return title + " by " + author + "(ISBN: " + ISBN + ", $" + price +")";
 	}
-	public boolean equals(Book other) {
+	@Override
+	public boolean equals(Object other) {
 		//Returns true if two books have the same ISBN number
-		return true;
-	}
+		if(this == other) {
+			return true;
+		}
+		if(other == null || getClass() != other.getClass()) {
+			return false;
+		}
+		Book book = (Book) other;
+		return ISBN.equals(book.ISBN);
+		}
 }
