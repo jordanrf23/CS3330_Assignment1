@@ -5,11 +5,13 @@ The objective of this assignment is to implement a simple Library Book Man-
 agement System using Java. You will apply object-oriented programming
 principles such as encapsulation, constructors, accessor/mutator methods, and
 object comparison.
+
 2 Problem Description
 You will create a Book class that represents a book with attributes such as
 title, author, ISBN, and price. Then, you will implement a Library class that
 manages an array of books and provides functionalities to add, search, and
 display books.
+
 3 Part 1: The Book Class (20 points)
 Create a Book class with the following specifications:
 • Private attributes:
@@ -33,6 +35,7 @@ setISBN(String ISBN), setPrice(double price)
 book. (Must be overridden)
 – public boolean equals(Object other) - Returns true if two books
 have the same ISBN. (Must be overridden)
+
 4 Part 2: The Library Class (20 points)
 Create a Library class to manage an array of Book objects.
 • Attributes:
@@ -47,6 +50,7 @@ the array (if it exists).
 ISBN and returns the Book object (or null if not found).
 – public void displayBooks() - Prints details of all books using
 toString().
+
 5 Part 3: Test Class (5 points)
 Create a LibraryApp class with a main() method that:
 • Creates a Library object.
@@ -58,6 +62,7 @@ it simplifies things.
 • Searches for a book by ISBN and displays the result.
 • Remove a book that exists and does not exist.
 • Displays all books in the library.
+
 6 Important Notes
 • Follow Java naming conventions, or you will lose points.
 • Use packages or you will lose points.
@@ -79,6 +84,7 @@ to split from your group, or work alone. See syllabus for details.
 • Due date: 2/12/2025, 11:59 PM.
 • Submission: You must submit your GitHub repository, and your ex-
 ported project through Canvas.
+
 7 Sample Output
 Adding books...
 Book added successfully.
